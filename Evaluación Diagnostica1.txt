@@ -3,24 +3,24 @@ Inicio
 (origen, x(15)[a-z]);
 (precio, d[0-200000]);
 (cant_autos, c[0-10000]);
-	Escribir "Ingrese el número de autos a ingresar";
+	Escribir "Ingrese el numero de autos a ingresar";
 	Leer cant_autos
 	Dimension num[cant_autos]
 	i<-1
 Mientras i<=cant_autos Hacer
-		Escribir "Ingrese la marca del vehículo en minúscula"
+		Escribir "Ingrese la marca del vehiculo en minúscula"
 		Leer marca
-		Escribir "Ingrese el origen del vehículo"
+		Escribir "Ingrese el origen del vehiculo"
 		Leer origen
-		Escribir "Ingrese el costo del vehículo"
+		Escribir "Ingrese el costo del vehiculo"
 		Leer precio
-    	Escribir "----Ingrese datos del siguiente vehículo---"
+    	Escribir "----Ingrese datos del siguiente vehiculo---"
 	
-	Si origen = "argentina" Entonces
+	Si origen = "Argentina" Entonces
 		calculo<-(precio * 0.20)
 		costofin<- calculo+ precio
     Fin Si
-	Si origen = "colombia" Entonces
+	Si origen = "Colombia" Entonces
 		calculo<-(precio * 0.20)
 		costofin<- calculo+ precio
     Fin Si
