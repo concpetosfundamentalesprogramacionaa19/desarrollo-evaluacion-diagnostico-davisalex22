@@ -1,0 +1,38 @@
+Inicio
+(marca, x(15)[a-z]);
+(origen, x(15)[a-z]);
+(precio, d[0-200000]);
+(cant_autos, c[0-10000]);
+	Escribir "Ingrese el número de autos a ingresar";
+	Leer cant_autos
+	Dimension num[cant_autos]
+	i<-1
+Mientras i<=cant_autos Hacer
+		Escribir "Ingrese la marca del vehículo en minúscula"
+		Leer marca
+		Escribir "Ingrese el origen del vehículo"
+		Leer origen
+		Escribir "Ingrese el costo del vehículo"
+		Leer precio
+    	Escribir "----Ingrese datos del siguiente vehículo---"
+	
+	Si origen = "argentina" Entonces
+		calculo<-(precio * 0.20)
+		costofin<- calculo+ precio
+    Fin Si
+	Si origen = "colombia" Entonces
+		calculo<-(precio * 0.20)
+		costofin<- calculo+ precio
+    Fin Si
+	Si origen = "Chile" Entonces
+		calculo<-(precio * 0.20)
+		costofin<- calculo+ precio
+	Sino
+		calculo<-(precio* 0.4)
+		costofin<- calculo + precio
+    Fin Si
+Fin Mientras	
+	Escribir "El total de autos importados son: ",cant_autos
+	Escribir "El total de impuestos generados son: ",calculo
+	Escribir "El total de los precios de venta de los carros son: ",costofin
+Fin
